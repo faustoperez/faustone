@@ -1,0 +1,986 @@
+/* WEB FONTS
+---------------------------*/
+
+@font-face {
+    font-family: 'DekoDisplaySerialBold';
+    src: url('../fonts/Deko_Display_Serial-Bold-webfont.eot');
+    src: url('../fonts/Deko_Display_Serial-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Deko_Display_Serial-Bold-webfont.woff') format('woff'),
+         url('../fonts/Deko_Display_Serial-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Deko_Display_Serial-Bold-webfont.svg#DekoDisplaySerialBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SteelfishRgRegular';
+    src: url('../fonts/steelfish_rg-webfont.eot');
+    src: url('../fonts/steelfish_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/steelfish_rg-webfont.woff') format('woff'),
+         url('../fonts/steelfish_rg-webfont.ttf') format('truetype'),
+         url('../fonts/steelfish_rg-webfont.svg#SteelfishRgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTS55F-webfont.eot');
+    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTS56F-webfont.eot');
+    src: url('../fonts/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTS56F-webfont.woff') format('woff'),
+         url('../fonts/PTS56F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS56F-webfont.svg#pt_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PTS75F-webfont.eot');
+    src: url('../fonts/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTS75F-webfont.woff') format('woff'),
+         url('../fonts/PTS75F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS75F-webfont.svg#pt_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Icons';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* BASE
+---------------------------*/
+
+/* crudo 	 #F4F1DE
+   rojo   	 #C44032
+   rojo osc  #852F26
+   gris   	 #2E2E2E
+   azul      #4694B0 */
+
+
+html {
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+}
+
+
+.wrapper {
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+::-moz-selection { 
+	background: #4694B0;
+	color: #F4F1DE;
+	text-shadow: none;
+}
+
+::selection { 
+	background: #4694B0;
+	color: #F4F1DE;
+	text-shadow: none;
+}
+
+img::selection {
+	background: transparent;
+}
+
+img::-moz-selection { 
+	background: transparent;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* ESTILOS
+---------------------------*/
+
+body {
+	color: #2E2E2E;
+	font: 100%/1.5 "PT Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #F4F1DE url(../img/noise_bg.png);
+	padding: 0;
+	margin: 0;
+}
+
+a:link,
+a:visited {
+	color: #4694B0;
+}
+
+a:hover,
+a:focus {
+	background: rgba(0,0,0,.1);
+}
+
+nav {
+	text-align: center;
+	margin: 2em 0;
+}
+
+nav li {
+	list-style: none;
+	margin: 0;
+	margin-right: 1.9em;
+	display: inline;
+}
+
+nav li:last-of-type {
+	margin-right: 0;
+}
+
+nav a:link,
+nav a:visited {
+	font: 1.45em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: .5em;
+	text-decoration: none;
+	background-color: transparent;
+	color: #2E2E2E;
+	line-height: .9em;
+	-webkit-border-radius: .25em; 
+	border-radius: .25em;
+
+}
+nav a:hover,
+nav a:focus {
+	background-color: rgba(0,0,0,.1);
+}
+
+nav a.current {
+	color: #F4F1DE;
+	background-color: #4694B0;
+}
+
+.selectnav { 
+	display: none; 
+}
+
+hgroup {
+	background: #C44032 url(../img/noise_bg.png);
+	padding: 1.1em 0 1.4em 0;
+	-webkit-box-shadow: 0 0 0 2px rgba(0,0,0,.2);
+	box-shadow: 0 0 0 2px rgba(0,0,0,.2);
+}
+
+h1 {
+	font-family: "DekoDisplaySerialBold", sans-serif;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1.2em;
+	height: 1.2em;
+	margin-left: .1em;
+	padding: 0 .2em;
+	color: #F4F1DE;
+	border: 1px #F4F1DE solid;
+	margin-bottom: .1em;
+	background-color: #2E2E2E;
+	-webkit-border-radius: .15em;
+	border-radius: .15em;
+}
+
+h2 {
+	font: 8em/1 "DekoDisplaySerialBold", sans-serif;
+	color: #F4F1DE;
+	text-shadow: #852F26 .01em .01em 0,
+				 #852F26 .02em .02em 0,
+				 #852F26 .03em .03em 0,
+				 #852F26 .04em .04em 0,
+				 #852F26 .05em .05em 0,
+				 #852F26 .06em .06em 0,
+				 #852F26 .07em .07em 0,	
+				 #852F26 .08em .08em 0,
+				 #852F26 .09em .09em 0,
+				 #852F26 .1em .1em 0;
+}
+
+p.intro {
+	font: 1.875em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	padding: 1.2em 0;
+}
+
+.description p {
+	padding-bottom: 1em;
+	text-align: justify;
+}
+
+.description p:first-of-type:first-letter {
+	font-size: 3em;
+	font-weight: bold;
+	margin-right: .1em;
+	float: left;
+	line-height: 1em;
+}
+
+.description img {
+	max-width: 40%;
+	float: left;
+	padding: .4em;
+	background: #FFFFFF;
+	margin: 0 2% 0.6% 0;
+	display: block;
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+article h3 {
+	font: normal 1.9em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	padding: 1.5em 0 1em;
+	text-align: center;
+	text-shadow: 2px 2px 0 rgba(255,255,255,.75);
+}
+
+.op article h3 {
+	text-align: left;
+}
+
+.features,
+.schematic,
+.distributors {
+	width: 32%;
+	float: left;
+	display: block;
+	margin: 0 2% 1% 0;
+}
+
+.features {
+	margin-left: 0;
+}
+
+.distributors {
+	margin-right: 0;
+}
+
+.dt .schematic {
+	width: 66%;
+	margin-right: 0;
+}
+
+.schematic p:first-of-type:first-letter,
+.distributors p:first-of-type:first-letter {
+	font-weight: normal;
+	float: none;
+	font-size: 1em;
+	margin-right: 0;
+}
+
+.schematic p,
+.distributors p {
+	text-align: left;
+}
+
+.features li {
+	padding-bottom: .4em;
+	background: url(../img/tick.png) 0 25% no-repeat;
+	padding-left: 2.5em;
+	line-height: 1.8;
+}
+
+aside strong {
+	color: #C44032;
+}
+
+.schematic img {
+	width: 40%;
+	padding: 0;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #2E2E2E, 3px 3px 1px rgba(0,0,0,.4);
+	float: right;
+	margin: 0  0 1.5em 1.5em;
+
+}
+
+.features li,
+.schematic p,
+.distributors p,
+.distributors li {
+	font-size: 0.875em;
+}
+
+.schematic em {
+	display: block;
+	margin-top: 1em;
+}
+
+.schematic button {
+	width: 100%;
+	margin-top: 1em;
+	font: normal 1.875em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: .3em;
+	color: #F4F1DE;
+	background: #4694B0 url(../img/noise_bg.png);
+	border: 1px solid #357086;
+	-webkit-border-radius: .1em;
+	border-radius: .1em;
+	-webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.4);
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.4);
+	text-shadow: 0 -1px 1px rgba(0,0,0,.2);
+}
+
+.schematic button:hover,
+.schematic button:focus {
+	background-color: #356F84;
+}
+
+.distributors p {
+	padding-left: 15%;
+}
+
+.distributors dl {
+	padding-left: 15%;
+	margin: 0;
+	font-size: .9em;
+}
+
+.distributors dt {
+	font-style: italic;
+}
+
+.distributors dd {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+.distributors a {
+	font-weight: bold;
+}
+
+.dt .schematic img {
+	margin: 0 0 1.5em 5%;
+	width: 23.5%;
+}
+
+.dt .schematic button {
+	width: 65%;
+}
+
+.gallery {
+	padding: 4em 0 2em 0;
+}
+
+.op .gallery {
+	padding: 0;
+	padding-top: 2em;
+}
+
+.op .gallery:last-of-type {
+	padding-bottom: 3em;
+}
+
+.gallery figure {
+	padding: .4em;
+	background: #FFFFFF;
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+.small {
+	margin-bottom: 1em;
+}
+
+.small figure {
+	float: left;
+	display: block;
+	width: 49%;
+	margin: 0 2% 1% 0;
+}
+
+.small figure:nth-child(2n) {
+	margin-right: 0;
+}
+
+.dt .small figure,
+.op .small figure {
+	margin-bottom: 2em;
+}
+
+.dt .small,
+.op .small {
+	margin-bottom: 0;
+}
+
+.gallery img {
+	max-width: 100%;
+}
+
+.gallery figcaption {
+	font-size: .9em;
+	padding: .1em 0 0 .5em;
+	font-style: italic;
+	color: #163D47;
+}
+
+footer {
+	background: url("../img/footer_tear.png") top left repeat-x #2E2E2E;
+	color: #F4F1DE;
+	padding: 4em 0 3em;
+}
+
+footer h4 {
+	font: normal 1.5em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: .75em;
+	display: inline-block;
+	background-color: #C44032;
+	padding: .2em;
+	line-height: 1em;
+	-webkit-border-radius: .15em;
+	border-radius: .15em;
+}
+
+footer p,
+footer ul {
+	font-size: .8125em;
+}
+
+footer p {
+	padding-bottom: .75em;
+}
+
+footer p:last-of-type {
+	padding-bottom: 0;
+	padding-top: .3em;
+	font: 1.75em 'Icons';
+}
+
+footer p:last-of-type a {
+	text-decoration: none;
+	color: #F4F1DE;
+}
+
+footer img {
+	-webkit-border-radius: .2em;
+	border-radius: .2em;
+	border: 3px solid #F4F1DE;
+	width: 15%;
+	float: left;
+	margin: 0 2% 1% 0;
+}
+
+.about {
+	width: 57.5%;
+	float: left;
+	margin: 0 2% 1% 0;
+}
+
+.links {
+	width: 23.5%;
+	float: left;
+	margin: 0 0 1% 0;
+}
+
+.links h4 {
+	margin-left: 5%;
+}
+
+.links ul {
+	padding-left: 10%;
+}
+
+.links li {
+	list-style: circle;
+	margin-bottom: 1em;
+}
+
+.links a:hover {
+	background: rgba(255,255,255,.1);
+}
+
+div#video_amaral {
+	padding: 1em 0;
+}
+
+/* HOME
+---------------------------*/
+
+.home {
+	color: #F4F1DE;
+}
+
+.home header {
+	background: #C44032 url(../img/noise_bg.png);
+	padding: 3em 0;
+	-moz-box-shadow: 0 0 0 2px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 0 2px rgba(0,0,0,.2);
+	box-shadow: 0 0 0 2px rgba(0,0,0,.2);
+}
+
+.home hgroup {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: transparent;
+	text-align: center;
+}
+
+.home h1 {
+	font-size: 5em;
+	-webkit-border-radius: .08em;
+	border-radius: .08em;
+	border-width: 2px;
+}
+
+.home h2 {
+	font-size: 5em;
+}
+
+.home p {
+	font: 1.6em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	margin: auto;
+	width: 22em;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+	line-height: 1.4;
+}
+
+.home .wrapper {
+	padding: 4em 0 2em 0;
+}
+
+.home img {
+	max-width: 100%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-moz-box-shadow: 0 0 0 3px white, 4px 4px 1px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 0 3px white, 4px 4px 1px rgba(0,0,0,.2);
+	box-shadow: 0 0 0 3px white, 4px 4px 1px rgba(0,0,0,.2);
+}
+
+.home section {
+	position: relative;
+	float: left;
+	width: 23.5%;
+	margin: 0 2% 4% 0;
+}
+
+.home section:last-of-type {
+	margin-right: 0;
+} 
+
+.home h3 {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	font: 1.6em "SteelfishRgRegular", "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+	padding: .3em;
+	color: #F4F1DE;
+	background: #4694B0 url(../img/noise_bg.png);
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;
+	border-radius: .2em;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.2);
+}
+
+.home a:focus,
+.home a:hover {
+	background: transparent;
+}
+
+.home a:focus h3,
+.home a:hover h3 {
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+} 
+
+
+
+/* MEDIA QUERIES
+---------------------------*/
+
+@media screen and (max-width: 900px) {
+	.op h2 {
+		font-size: 6.5em;
+	}
+}
+
+@media screen and (max-width: 773px)  {
+	
+	.home header {
+		padding: 2em 0;
+	}
+
+	.home h1,
+	.home h2 {
+		font-size: 4em;
+	}
+
+	.home p {
+		width: 80%;
+	}
+
+	.home section {
+		width: 49%;
+	}
+
+	.home section:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	h2,
+	.op h2 {
+		font-size: 6em;
+	}
+
+	p.intro {
+		font-size: 1.6em;
+	}
+
+	.vk .wrapper,
+	.fu .wrapper,
+	.dt .wrapper,
+	.op .wrapper {
+		width: 92%;
+	}
+
+	.description p {
+		font-size: .875em;
+	}
+
+	.features,
+	.schematic,
+	.distributors,
+	.dt .schematic {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.features,
+	.distributors {
+		text-align: center;
+	}
+
+	.features ul {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.features li {
+		display: inline;
+		padding-left: 1.7em;
+		margin-right: 1em;
+	}
+
+	.schematic img,
+	.dt .schematic img {
+		float: left;
+		margin: 0 5% 1.5em 0;
+		width: 23.5%;
+	}
+
+	.schematic button,
+	.dt .schematic button {
+		width: 65%;
+	}
+
+	.distributors dl,
+	.distributors p {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.distributors dt,
+	.distributors dd {
+		display: inline;
+	}
+
+	.distributors dd {
+		margin-right: 1.5em;
+	}
+
+	.distributors dd:last-of-type {
+		margin-right: 0;
+	}
+
+	.small figure {
+		float: none;
+		width: 100%;
+		margin-bottom: 2em;
+	}
+
+
+	footer img {
+		width: 23.5%;
+		margin-right: 5%;
+	}
+
+	.about {
+		width: 71.5%;
+		margin-right: 0;
+	}
+
+	.links {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	h2,
+	.op h2 {
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.js #nav { 
+		display: none; 
+	}
+
+	.js .selectnav {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+		text-transform: uppercase;
+	}
+
+	nav {
+		margin: 1em 0;
+	}
+
+	.home h1,
+	.home h2 {
+		font-size: 3em;
+	}
+
+	.home p {
+		width: 90%;
+	}
+
+	.home header,
+	.home .wrapper {
+		padding: 1.5em 0;
+	}
+
+	h2 {
+		font-size: 4.5em;
+	}
+
+	p.intro {
+		font-size: 1.5em;
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	h2,
+	.op h2 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 485px) {
+	.home header {
+		padding: 1em 0;
+	}
+
+	.home p {
+		display: none;
+	}
+
+	.home .wrapper {
+		padding: 1.5em 0;
+		width: 80%;
+	}
+
+	.home section {
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+	.home section:last-of-type {
+		margin-bottom: 0;
+	}
+
+	h2,
+	.op h2 {
+	  	font-size: 3.5em;
+	 }
+
+	.description img {
+		max-width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.description p {
+		font-size: 0.9375em;
+	}
+
+	.features ul {
+		width: 100%;
+	}
+
+	.schematic img,
+	.dt .schematic img  {
+		width: 32.5%;
+		margin: 0 5% 1% 0;
+	}
+
+	.schematic button,
+	.dt .schematic button {
+		width: 100%;
+	}
+
+	.distributors dl {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.gallery {
+		padding: 3em 0 1em 0;
+	}
+
+	.gallery figure {
+		padding: 0;
+	}
+
+	.gallery figcaption {
+		padding: .4em;
+		padding-left: 1em;
+	}
+
+	footer img {
+		display: none;
+	}
+
+	footer .about {
+		width: 100%;
+		float: none;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	h2,
+	.op h2 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.home header {
+		padding: 1em 0;
+	}
+
+	.home h2 {
+		font-size: 2.5em;
+	}
+
+	h2,
+	.op h2 {
+		font-size: 3em;
+	}
+
+	.vk .wrapper,
+	.fu .wrapper,
+	.dt .wrapper,
+	.op .wrapper {
+		width: 87.5%;
+	}
+
+	.features ul {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.features li {
+		display: block;
+		text-align: left;
+	}
+
+	.schematic img,
+	.dt .schematic img {
+		float: none;
+		width: 60%;
+		margin: 0 auto 1em auto;
+	}
+
+	.distributors dl {
+		width: 100%;
+	}
+
+	.distributors dt {
+		display: block;
+		margin-top: .7em;
+	}
+
+	.distributors dd {
+		margin-right: 0;
+	}
+
+	footer {
+		padding: 3em 0 2em;
+	}
+
+}
