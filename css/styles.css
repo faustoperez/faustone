@@ -72,7 +72,7 @@
 /* BASE
 ---------------------------*/
 
-/* crudo 	 #F4F1DE
+/* crudo 	   #F4F1DE
    rojo   	 #C44032
    rojo osc  #852F26
    gris   	 #2E2E2E
@@ -89,7 +89,7 @@ html {
 	width: 95%;
 	max-width: 1000px;
 	margin: auto;
-	
+
 }
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
@@ -116,25 +116,19 @@ p {
 	font-weight: normal;
 }
 
-::-moz-selection { 
+::-moz-selection,
+::selection {
 	background: #4694B0;
 	color: #F4F1DE;
 	text-shadow: none;
 }
 
-::selection { 
-	background: #4694B0;
-	color: #F4F1DE;
-	text-shadow: none;
-}
 
-img::selection {
+img::selection,
+img::-moz-selection  {
 	background: transparent;
 }
 
-img::-moz-selection { 
-	background: transparent;
-}
 
 ul {
 	list-style: none;
@@ -191,7 +185,7 @@ nav a:visited {
 	background-color: transparent;
 	color: #2E2E2E;
 	line-height: .9em;
-	-webkit-border-radius: .25em; 
+	-webkit-border-radius: .25em;
 	border-radius: .25em;
 
 }
@@ -205,8 +199,8 @@ nav a.current {
 	background-color: #4694B0;
 }
 
-.selectnav { 
-	display: none; 
+.selectnav {
+	display: none;
 }
 
 hgroup {
@@ -242,7 +236,7 @@ h2 {
 				 #852F26 .04em .04em 0,
 				 #852F26 .05em .05em 0,
 				 #852F26 .06em .06em 0,
-				 #852F26 .07em .07em 0,	
+				 #852F26 .07em .07em 0,
 				 #852F26 .08em .08em 0,
 				 #852F26 .09em .09em 0,
 				 #852F26 .1em .1em 0;
@@ -623,7 +617,7 @@ div#video_amaral {
 
 .home section:last-of-type {
 	margin-right: 0;
-} 
+}
 
 .home h3 {
 	position: absolute;
@@ -652,7 +646,7 @@ div#video_amaral {
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
-} 
+}
 
 
 
@@ -666,7 +660,7 @@ div#video_amaral {
 }
 
 @media screen and (max-width: 773px)  {
-	
+
 	.home header {
 		padding: 2em 0;
 	}
@@ -794,8 +788,8 @@ div#video_amaral {
 }
 
 @media screen and (max-width: 575px) {
-	.js #nav { 
-		display: none; 
+	.js #nav {
+		display: none;
 	}
 
 	.js .selectnav {
