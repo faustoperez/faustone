@@ -72,7 +72,7 @@
 /* BASE
 ---------------------------*/
 
-/* crudo 	   #F4F1DE
+/* crudo 	 #F4F1DE
    rojo   	 #C44032
    rojo osc  #852F26
    gris   	 #2E2E2E
@@ -323,7 +323,7 @@ article h3 {
 
 .features li {
 	padding-bottom: .4em;
-	background: url(../img/tick.png) 0 25% no-repeat;
+	background: url(../img/check.svg) 0 25% no-repeat;
 	padding-left: 2.5em;
 	line-height: 1.8;
 }
