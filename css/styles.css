@@ -497,6 +497,7 @@ footer p {
 	padding-bottom: .75em;
 }
 
+/*
 footer p:last-of-type {
 	padding-bottom: 0;
 	padding-top: .3em;
@@ -507,6 +508,7 @@ footer p:last-of-type a {
 	text-decoration: none;
 	color: #F4F1DE;
 }
+*/
 
 footer img {
 	-webkit-border-radius: .2em;
